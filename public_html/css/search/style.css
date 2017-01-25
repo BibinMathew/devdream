@@ -1,0 +1,22 @@
+@import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
+.meta-search{
+    list-style: none;
+    line-height: 30px;
+}
+.uk-panel-box{
+    background-color: #fff;
+}
+.margin-right{
+    border-right: 1px dotted #ccc;
+}
+.search-results{
+    font : normal normal 1.125em "Roboto",Arial,Verdana,sans-serif;
+}
+
+.uk-width-2-3 h3{
+    color: #248dc1 !important;
+}
+
+.search-single{
+    padding-bottom: 20px;
+}

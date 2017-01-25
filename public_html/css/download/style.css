@@ -1,0 +1,57 @@
+.uk-width-3-10 h5 {
+    background: url(/images/sep.png) repeat-x center;
+    margin: 0 0 30px;
+}
+.uk-width-3-10 h5 span {
+    background: #333333;
+    height: 38px;
+    line-height: 38px;
+    padding: 0;
+    width: 130px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    font-family: Josefin Sans;
+    text-transform: uppercase;
+    display: table;
+    margin: 0 auto;
+}
+
+#newspaper-a {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    width: 480px;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid #69c;
+    margin: 20px;
+    text-rendering: optimizelegibility;
+     text-align: center;
+    
+}
+abbr, address, audio, b, blockquote, canvas, caption, cite, code, dd, del, details, dfn, dl, dt, em, fieldset, footer, h5, header, hgroup, i, iframe, ins, kbd, legend, mark, menu, object, ol, pre, q, samp, small, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, var, video {
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 10px;
+    outline: 0;
+    border: 0;
+    background: 0 0;
+}
+#newspaper-a td {
+    color: #669;
+    padding: 7px 17px;
+}
+thead {
+    
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+     border-bottom:  1px dotted #69c;
+        
+}
+th{
+   
+     border-bottom:  1px dotted #69c;
+}

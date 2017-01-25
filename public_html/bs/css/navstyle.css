@@ -1,0 +1,181 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 4, 2017, 11:13:49 AM
+    Author     : bibmathe
+*/
+
+
+/* #####################################################################
+   #
+   #   Project       : Modal Login with jQuery Effects
+   #   Author        : Rodrigo Amarante (rodrigockamarante)
+   #   Version       : 1.0
+   #   Created       : 07/28/2015
+   #   Last Change   : 08/02/2015
+   #
+   ##################################################################### */
+   
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+#login-modal .modal-dialog {
+    width: 350px;
+}
+
+#login-modal input[type=text], input[type=password] {
+	margin-top: 10px;
+}
+
+#div-login-msg,
+#div-lost-msg,
+#div-register-msg {
+    border: 1px solid #dadfe1;
+    height: 30px;
+    line-height: 28px;
+    transition: all ease-in-out 500ms;
+}
+
+#div-login-msg.success,
+#div-lost-msg.success,
+#div-register-msg.success {
+    border: 1px solid #68c3a3;
+    background-color: #c8f7c5;
+}
+
+#div-login-msg.error,
+#div-lost-msg.error,
+#div-register-msg.error {
+    border: 1px solid #eb575b;
+    background-color: #ffcad1;
+}
+
+#icon-login-msg,
+#icon-lost-msg,
+#icon-register-msg {
+    width: 30px;
+    float: left;
+    line-height: 28px;
+    text-align: center;
+    background-color: #dadfe1;
+    margin-right: 5px;
+    transition: all ease-in-out 500ms;
+}
+
+#icon-login-msg.success,
+#icon-lost-msg.success,
+#icon-register-msg.success {
+    background-color: #68c3a3 !important;
+}
+
+#icon-login-msg.error,
+#icon-lost-msg.error,
+#icon-register-msg.error {
+    background-color: #eb575b !important;
+}
+
+#img_logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+/* #########################################
+   #    override the bootstrap configs     #
+   ######################################### */
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .8;
+}
+
+.modal-content {
+    background-color: #ececec;
+    border: 1px solid #bdc3c7;
+    border-radius: 0px;
+    outline: 0;
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 0px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+}
+
+.modal-footer {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border-top: 0px;
+}
+
+.checkbox {
+    margin-bottom: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    border-radius: 0px;
+}
+
+.btn-link {
+    padding: 5px 10px 0px 0px;
+    color: #95a5a6;
+}
+
+.btn-link:hover, .btn-link:focus {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.glyphicon {
+    top: 0px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.btn-social{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social.btn-lg{padding-left:61px}.btn-social.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social.btn-sm{padding-left:38px}.btn-social.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social.btn-xs{padding-left:30px}.btn-social.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon{position:relative;padding-left:44px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;height:34px;width:34px;padding-left:0;padding-right:0}.btn-social-icon :first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
+.btn-social-icon.btn-lg{padding-left:61px}.btn-social-icon.btn-lg :first-child{line-height:45px;width:45px;font-size:1.8em}
+.btn-social-icon.btn-sm{padding-left:38px}.btn-social-icon.btn-sm :first-child{line-height:28px;width:28px;font-size:1.4em}
+.btn-social-icon.btn-xs{padding-left:30px}.btn-social-icon.btn-xs :first-child{line-height:20px;width:20px;font-size:1.2em}
+.btn-social-icon :first-child{border:none;text-align:center;width:100% !important}
+.btn-social-icon.btn-lg{height:45px;width:45px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-sm{height:30px;width:30px;padding-left:0;padding-right:0}
+.btn-social-icon.btn-xs{height:22px;width:22px;padding-left:0;padding-right:0}
+.btn-bitbucket{color:#fff;background-color:#205081;border-color:rgba(0,0,0,0.2)}.btn-bitbucket:hover,.btn-bitbucket:focus,.btn-bitbucket:active,.btn-bitbucket.active,.open .dropdown-toggle.btn-bitbucket{color:#fff;background-color:#183c60;border-color:rgba(0,0,0,0.2)}
+.btn-bitbucket:active,.btn-bitbucket.active,.open .dropdown-toggle.btn-bitbucket{background-image:none}
+.btn-bitbucket.disabled,.btn-bitbucket[disabled],fieldset[disabled] .btn-bitbucket,.btn-bitbucket.disabled:hover,.btn-bitbucket[disabled]:hover,fieldset[disabled] .btn-bitbucket:hover,.btn-bitbucket.disabled:focus,.btn-bitbucket[disabled]:focus,fieldset[disabled] .btn-bitbucket:focus,.btn-bitbucket.disabled:active,.btn-bitbucket[disabled]:active,fieldset[disabled] .btn-bitbucket:active,.btn-bitbucket.disabled.active,.btn-bitbucket[disabled].active,fieldset[disabled] .btn-bitbucket.active{background-color:#205081;border-color:rgba(0,0,0,0.2)}
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:hover,.btn-facebook:focus,.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{color:#fff;background-color:#30487b;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open .dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled,.btn-facebook[disabled],fieldset[disabled] .btn-facebook,.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled:active,.btn-facebook[disabled]:active,fieldset[disabled] .btn-facebook:active,.btn-facebook.disabled.active,.btn-facebook[disabled].active,fieldset[disabled] .btn-facebook.active{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+.btn-google-plus{color:#fff;background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}.btn-google-plus:hover,.btn-google-plus:focus,.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{color:#fff;background-color:#ca3523;border-color:rgba(0,0,0,0.2)}
+.btn-google-plus:active,.btn-google-plus.active,.open .dropdown-toggle.btn-google-plus{background-image:none}
+.btn-google-plus.disabled,.btn-google-plus[disabled],fieldset[disabled] .btn-google-plus,.btn-google-plus.disabled:hover,.btn-google-plus[disabled]:hover,fieldset[disabled] .btn-google-plus:hover,.btn-google-plus.disabled:focus,.btn-google-plus[disabled]:focus,fieldset[disabled] .btn-google-plus:focus,.btn-google-plus.disabled:active,.btn-google-plus[disabled]:active,fieldset[disabled] .btn-google-plus:active,.btn-google-plus.disabled.active,.btn-google-plus[disabled].active,fieldset[disabled] .btn-google-plus.active{background-color:#dd4b39;border-color:rgba(0,0,0,0.2)}
+

@@ -1,0 +1,133 @@
+.video-list-thumbs{
+    padding-top: 20px;
+}
+
+form .error {
+  color: #ff0000;
+}
+.video-list-thumbs > li{
+    margin-bottom:12px;
+}
+.video-list-thumbs > li:last-child{}
+.video-list-thumbs > li > a{
+	display:block;
+	position:relative;
+	background-color: #111;
+	color: #fff;
+	padding: 8px;
+	border-radius:3px;
+    transition:all 500ms ease-in-out;
+    border-radius:4px
+}
+.video-list-thumbs > li > a:hover{
+	box-shadow:0 2px 5px rgba(0,0,0,.3);
+	text-decoration:none
+}
+.video-list-thumbs h2{
+	bottom: 0;
+	font-size: 14px;
+	height: 33px;
+	margin: 8px 0 0;
+}
+.video-list-thumbs .glyphicon-play-circle{
+    font-size: 60px;
+    opacity: 0.6;
+    position: absolute;
+    right: 39%;
+    top: 31%;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    transition:all 500ms ease-in-out;
+}
+.video-list-thumbs > li > a:hover .glyphicon-play-circle{
+	color:#fff;
+	opacity:1;
+	text-shadow:0 1px 3px rgba(0,0,0,.8);
+}
+.video-list-thumbs .duration{
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 2px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	left: 12px;
+	line-height: 13px;
+	padding: 2px 3px 1px;
+	position: absolute;
+	top: 12px;
+    transition:all 500ms ease;
+}
+.video-list-thumbs > li > a:hover .duration{
+	background-color:#000;
+}
+@media (min-width:320px) and (max-width: 480px) { 
+	.video-list-thumbs .glyphicon-play-circle{
+    font-size: 35px;
+    right: 36%;
+    top: 27%;
+	}
+	.video-list-thumbs h2{
+		bottom: 0;
+		font-size: 12px;
+		height: 22px;
+		margin: 8px 0 0;
+	}
+}
+
+.more {
+    background: url(/images/plus.png) no-repeat scroll 57px 9px #CF0000;
+    color: #FFF;
+    
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 20px;
+    position: relative;
+    float:right;
+    text-transform: uppercase;
+    top: -20px;
+    text-decoration: none;
+}
+
+
+.title {
+    border-bottom: 4px solid #CF0000;
+    font-family: 'bebasregular';
+    font-size: 20px;
+    word-spacing: 2px;
+   
+}
+
+#articles{
+    padding: 0px;
+}
+.listarticle{
+    padding-top: 20px;
+}
+
+.article-caption
+{
+position: absolute;
+bottom: 10px;
+max-width: 90%;
+text-align: center;
+background-color: #848282;
+
+}
+
+.article-img
+{
+width: 100%; 
+max-height: 400px;
+object-fit: cover;
+}
+.listarticle strong{
+    font-weight: 300;
+}
+
+.article-title a{
+    font-size: 17px;
+    color: white;
+    
+}
+.fa {
+    margin-top: 10px;
+}

@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 5, 2017, 4:22:43 PM
+    Author     : bibmathe
+*/
+.navbar
+{
+    background-color:#222;
+    padding:10px 0;
+}
+
+.articlebottom{
+    margin-top: 30px;
+}
+.image-container{
+    
+}
+.image-container img{
+    max-width: 100%;
+}
+.featured-article{
+    text-align: center;
+}
+
+.more {
+    background: url(/images/plus.png) no-repeat scroll 57px 9px #CF0000;
+    color: #FFF;
+    
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 20px;
+    position: relative;
+    float:right;
+    text-transform: uppercase;
+    top: -20px;
+    text-decoration: none;
+}
+
+
+.title {
+    border-bottom: 4px solid #CF0000;
+    font-family: 'bebasregular';
+    font-size: 20px;
+    word-spacing: 2px;
+   
+}
+
+#articles{
+    padding: 0px;
+}
+.listarticle{
+    padding-top: 20px;
+}
+
+.article-caption
+{
+position: absolute;
+bottom: 10px;
+max-width: 90%;
+text-align: center;
+background-color: #848282;
+
+}
+
+.article-img
+{
+width: 100%; 
+max-height: 400px;
+object-fit: cover;
+}
+.listarticle strong{
+    font-weight: 300;
+}
+
+.article-title a{
+    font-size: 17px;
+    color: white;
+    
+}
+.fa {
+    margin-top: 10px;
+}
